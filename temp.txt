@@ -1,0 +1,19 @@
+Map<Integer,String> map = new HashMap<Integer,String>();
+		
+		map.put(1,"apple");
+		map.put(2,"orange");
+		map.put(3,"mango");
+		map.put(4,"pineapple");
+		
+		System.out.println(map);
+		
+		 //Traversing Map 
+		Set<Entry<Integer, String>> set = map.entrySet();  //Converting to Set so that we can traverse
+		
+		Iterator<Entry<Integer, String>> itr = set.iterator();
+		
+		while (itr.hasNext()) {
+			//Converting to Map.Entry so that we can get key and value separately
+			Map.Entry<Integer,String> entry = (Map.Entry<Integer,String>) itr.next();
+			System.out.println(entry.getKey()+" "+entry.getValue());
+		}
