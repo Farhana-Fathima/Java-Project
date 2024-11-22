@@ -36,5 +36,7 @@ public class SimpleMapExample {
         map.forEach((key, value) -> {
             System.out.println("Key: " + key + ", Value: " + value);
         });
+
+        System.out.println("pull");
     }
 }
